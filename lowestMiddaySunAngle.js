@@ -16,8 +16,9 @@ function calcLMSA(latitude) {
         return -1;
     }
 
-    // invalid latitude [0° <-> 90°]
     latitude = Math.abs(latitude);
+    
+    // invalid latitude [0° <-> 90°]
     if (latitude > 90) {
         return -1;
     }
